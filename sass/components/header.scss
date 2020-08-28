@@ -14,6 +14,51 @@
     &__photo {
         height: 30rem;
         border-radius: 100%;
-        border: 5px solid #fff;
+        border: 7px solid var(--color-bkg);
+    }
+}
+
+.user-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 7rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    &__left {
+
+    }
+
+    &__links {
+        text-decoration: none;
+        font-size: 1.5rem;
+        margin-left: 1rem;
+        padding: 1rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: white;
+
+        &:not(:last-child){
+            margin-right: 1rem;
+        }
+    }
+
+    &__right {
+        background-color: var(--color-text);
+        padding: 2rem;
+
+    }
+
+    &__switch {
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: white;
+
     }
 }
