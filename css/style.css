@@ -1,0 +1,40 @@
+:root {
+  --color-orange: rgb(242, 108, 79);
+  --color-grey: rgb(99, 106, 121);
+  --color-dark: rgb(34, 34, 34);
+  --color-yellow: rgb(249, 200, 14);
+  --color-violet: rgb(130, 104, 252); }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--color-grey); }
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/laptop.jpg);
+  height: 75vh;
+  background-size: cover;
+  background-position: center bottom;
+  position: relative; }
+
+.user {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 25%); }
+  .user__photo {
+    height: 30rem;
+    border-radius: 100%;
+    border: 5px solid #fff; }
