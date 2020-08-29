@@ -40,8 +40,20 @@ body {
   transform: translate(-50%, 25%); }
   .user__photo {
     height: 30rem;
-    border-radius: 100%;
-    border: 7px solid var(--color-bkg); }
+    border-radius: 100%; }
+
+.user::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 110%;
+  width: 110%;
+  border-radius: 100%;
+  z-index: -1000;
+  animation: shadow 3s infinite;
+  background-color: transparent;
+  border: 6px solid var(--color-bkg); }
 
 .user-nav {
   position: fixed;
@@ -96,3 +108,14 @@ body {
     font-size: 2rem;
     color: white;
     background-color: transparent; }
+
+@keyframes shadow {
+  0% {
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+    transform: scale(1) translate(-50%, -50%); }
+  50% {
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+    transform: scale(0.9) translate(-55.5%, -55.7%); }
+  100% {
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+    transform: scale(1) translate(-50%, -50%); } }
