@@ -8,24 +8,60 @@
     url(../img/footer.jpg);
     background-size: cover;
     background-position: center;
+    display: flex;
+    align-items: center;
 }
 
 .form {
+    margin-left: 10rem;
+    font-family: inherit;
+    font-size: 1.2rem;
+
     &__input {
-
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
     }
 
-    &__name {
-
+    &__field {
+        padding: 1rem;
+        width: 25rem;
+        border-radius: 3px;
+        border: none;
+        box-shadow: 0 .6rem .6rem -.6rem rgba(0,0,0, .6);
+        
     }
 
-    &__email {
+    &__field:focus {
+        outline: none;
+    }
 
+    &__field::-webkit-input-placeholder {
+        transform: translateX(50%);
+        transition: all .2s;
+    }
+    &__field:focus::-webkit-input-placeholder {
+        transform: translateX(0%);
+        opacity: 0;
+        visibility: hidden;
     }
 
     &__label {
-
+        margin-top: .7rem;
+        color: var(--color-bkg);
+        margin-left: 1rem;
+        transition: all .2s;
+        transform: translateY(-3rem);
+        opacity: 0;
+        visibility: hidden;
     }
+    
+    &__field:focus + &__label {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
 
     &__radio-male {
 
@@ -40,7 +76,7 @@
     }
 
     &__radio-style {
-        
+
     }
 
     &__text {

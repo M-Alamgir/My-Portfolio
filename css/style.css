@@ -129,4 +129,42 @@ body {
   width: 100%;
   background-image: linear-gradient(105deg, #636a79 50%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 100%), url(../img/footer.jpg);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  display: flex;
+  align-items: center; }
+
+.form {
+  margin-left: 10rem;
+  font-family: inherit;
+  font-size: 1.2rem; }
+  .form__input {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column; }
+  .form__field {
+    padding: 1rem;
+    width: 25rem;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 0.6rem 0.6rem -0.6rem rgba(0, 0, 0, 0.6); }
+  .form__field:focus {
+    outline: none; }
+  .form__field::-webkit-input-placeholder {
+    transform: translateX(50%);
+    transition: all .2s; }
+  .form__field:focus::-webkit-input-placeholder {
+    transform: translateX(0%);
+    opacity: 0;
+    visibility: hidden; }
+  .form__label {
+    margin-top: .7rem;
+    color: var(--color-bkg);
+    margin-left: 1rem;
+    transition: all .2s;
+    transform: translateY(-3rem);
+    opacity: 0;
+    visibility: hidden; }
+  .form__field:focus + .form__label {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible; }
