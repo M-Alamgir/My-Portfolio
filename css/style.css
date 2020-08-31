@@ -147,14 +147,15 @@ body {
     width: 25rem;
     border-radius: 3px;
     border: none;
-    box-shadow: 0 0.6rem 0.6rem -0.6rem rgba(0, 0, 0, 0.6); }
+    box-shadow: 0 0.6rem 0.6rem -0.6rem rgba(0, 0, 0, 0.6);
+    border-bottom: 2px solid var(--color-text); }
   .form__field:focus {
     outline: none; }
   .form__field::-webkit-input-placeholder {
-    transform: translateX(50%);
+    transform: translate(50%, 2px);
     transition: all .2s; }
   .form__field:focus::-webkit-input-placeholder {
-    transform: translateX(0%);
+    transform: translate(0%, 2px);
     opacity: 0;
     visibility: hidden; }
   .form__label {
@@ -180,7 +181,8 @@ body {
   .form__label-radio {
     position: relative;
     padding-left: 4rem;
-    color: var(--color-bkg); }
+    color: var(--color-bkg);
+    letter-spacing: 1.5px; }
   .form__radio-style {
     margin-top: -8px;
     height: 3rem;
@@ -207,3 +209,14 @@ body {
   .form__text {
     height: 10rem;
     resize: none; }
+  .form__btn {
+    margin-top: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--color-text);
+    padding: 1rem;
+    font-size: 1.4rem;
+    color: var(--color-bkg);
+    letter-spacing: 1.5px;
+    cursor: pointer; }

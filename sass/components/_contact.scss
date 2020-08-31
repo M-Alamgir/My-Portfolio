@@ -31,7 +31,7 @@
         border-radius: 3px;
         border: none;
         box-shadow: 0 .6rem .6rem -.6rem rgba(0,0,0, .6);
-        
+        border-bottom: 2px solid var(--color-text);
     }
 
     &__field:focus {
@@ -39,11 +39,11 @@
     }
 
     &__field::-webkit-input-placeholder {
-        transform: translateX(50%);
+        transform: translate(50%, 2px);
         transition: all .2s;
     }
     &__field:focus::-webkit-input-placeholder {
-        transform: translateX(0%);
+        transform: translate(0%, 2px);
         opacity: 0;
         visibility: hidden;
     }
@@ -84,6 +84,7 @@
         position: relative;
         padding-left: 4rem;
         color: var(--color-bkg);
+        letter-spacing: 1.5px;
     }
 
     &__radio-style {
@@ -118,9 +119,19 @@
     &__text {
         height: 10rem;
         resize: none;
+
     }
 
     &__btn {
-
+        margin-top: 1rem;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        background-color: var(--color-text);
+        padding: 1rem;
+        font-size: 1.4rem;
+        color: var(--color-bkg);
+        letter-spacing: 1.5px;
+        cursor: pointer;
     }
 }
