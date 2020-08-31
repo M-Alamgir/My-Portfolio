@@ -41,14 +41,18 @@
                 <input type="email" class="form__field" id="email" placeholder="Enter Your Email">
                 <label for="email" class="form__label">Enter your Email</label>
             </div>
-            <div class="form__radio">
-                <input type="radio" class="form__radio-male" id="Male">
-                <label for="Male" class="form__label-radio"><span class="form__radio-style"></span></label>
-                <input type="radio" id="Female" class="form__radio-female">
-                <label for="Female" class="form__label-radio"><span class="form__radio-style"></span></label>
-            </div>
+            <div class="form__radio-container">
+                <div class="form__radio-group">
+                    <input type="radio" class="form__radio-input" name="radio" id="Male">
+                    <label for="Male" class="form__label-radio"><span class="form__radio-style"></span>Male</label>
+                </div>
+                <div class="form-radio-group">
+                    <input type="radio" id="Female" name="radio" class="form__radio-input">
+                    <label for="Female" class="form__label-radio"><span class="form__radio-style"></span>Female</label>
+                </div>
+            </div>       
             <div class="form__input">
-                <textarea class="form__text" cols="30" rows="10">
+                <textarea class="form__text">
 
                 </textarea>
             </div>
