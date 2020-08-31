@@ -122,6 +122,10 @@
 
     }
 
+    &__text:focus {
+        outline: none;
+    }
+
     &__btn {
         margin-top: 1rem;
         width: 100%;
