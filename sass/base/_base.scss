@@ -21,3 +21,26 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--color-grey);
 }
+
+.temp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(#fff, .5), rgba(#fff, .5));
+    z-index: 1000000000000000;
+
+
+    &_text {
+        font-size: 5rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: var(--color-dark);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-shadow: 0 .6rem .6rem  rgba(0,0,0, .4);
+    }
+}
