@@ -3,6 +3,8 @@ My Portfolio and Resume.
 
 ## live Demo
 
+checkout live demo here: https://ourandco.github.io/My-Portfolio/
+
 ## Languages
 - HTML5
 - CSS3
