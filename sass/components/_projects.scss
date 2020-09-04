@@ -29,3 +29,20 @@
         letter-spacing: .8px;
     }
 }
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+    &__row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card {
+        height: 10rem;
+        width: 10rem;
+        background-color: red;
+    }
+}
