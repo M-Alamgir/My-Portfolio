@@ -1,5 +1,44 @@
 .about {
-    height: 40rem;
+    height: 60rem;
     width: 100%;
-    
+    background-image: linear-gradient(rgba(34, 34, 34, .8), rgba(34, 34, 34, .8)) ,url(../img/temp-about.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__heading {
+        font-size: 3rem;
+        font-weight: 400;
+        color: var(--color-bkg);
+        margin-bottom: 2rem;
+        letter-spacing: 1.5px;
+    }
+
+    &__para {
+        font-size: 1.5rem;
+        color: var(--color-bkg);
+        width: 50%;
+        line-height: 1.5;
+        letter-spacing: .8px;
+        text-transform: capitalize;
+
+        &:not(:last-child){
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__btn {
+        margin-top: 2rem;
+        padding: 1rem 2rem;
+        background-color: var(--color-yellow);
+        color: var(--color-bkg);
+        border: none;
+        border-radius: 2px;
+        box-shadow: 0 .6rem .6rem rgba(0,0,0, .3);
+        cursor: pointer;
+        width: 15rem;
+    }
 }
