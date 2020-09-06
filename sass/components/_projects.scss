@@ -4,11 +4,12 @@
     padding: 4rem 3.5rem;
     background-color: rgb(197, 197, 197);
 
-
-    &__container {
+    .heading-text {
         display: flex;
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
+    }
+    &__container {
         background-color: var(--color-bkg);
         height: 100%;
         width: 100%;
@@ -31,18 +32,23 @@
 }
 
 .cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+
     &__row {
-        display: flex;
-        flex-direction: row;
     }
 
+
     .card {
-        height: 10rem;
-        width: 10rem;
-        background-color: red;
+        height: 20rem;
+        width: 30rem;
+        background-color: var(--color-bkg);
+        float: left;
+        border: 1px solid #777;
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
     }
 }

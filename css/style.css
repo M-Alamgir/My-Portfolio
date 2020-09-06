@@ -204,10 +204,11 @@ body {
   width: 100%;
   padding: 4rem 3.5rem;
   background-color: #c5c5c5; }
-  .projects__container {
+  .projects .heading-text {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column; }
+  .projects__container {
     background-color: var(--color-bkg);
     height: 100%;
     width: 100%;
@@ -225,17 +226,17 @@ body {
     letter-spacing: .8px; }
 
 .cards {
+  margin-top: 2rem;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 2rem; }
-  .cards__row {
-    display: flex;
-    flex-direction: row; }
+  justify-content: center; }
   .cards .card {
-    height: 10rem;
-    width: 10rem;
-    background-color: red; }
+    height: 20rem;
+    width: 30rem;
+    background-color: var(--color-bkg);
+    float: left;
+    border: 1px solid #777; }
+    .cards .card:not(:last-child) {
+      margin-right: 2rem; }
 
 .contact {
   height: 40rem;
