@@ -10,7 +10,8 @@ checkout live demo here: https://ourandco.github.io/My-Portfolio/
 - CSS3
 
 ### Resources
-
+- Google Fonts
+- unsplash.com
 
 ##### Sass, NPM, BEM METHADOLOGY, Live-Sever
 
