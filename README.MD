@@ -5,6 +5,8 @@ My Portfolio and Resume.
 
 checkout live demo here: https://ourandco.github.io/My-Portfolio/
 
+![](img/shot.PNG)
+
 ## Languages
 - HTML5
 - CSS3
