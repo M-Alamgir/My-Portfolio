@@ -19,3 +19,15 @@ checkout live demo here: https://ourandco.github.io/My-Portfolio/
 
 #### Author
 :bust_in_silhouette: Alamgir
+
+## Show your support
+
+Give a ⭐️ if you like this project
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+#### Copyrights
+
+- Free to use.
